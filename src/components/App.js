@@ -36,6 +36,15 @@ const App = () => {
   return (
     <div id="main">
                {/* Do not remove the main div */}
+       
+      <h1>Holiday List</h1>
+      <h2>Top Indian Vacation Cities</h2>
+      <ol>
+        {indianCities.map((city, index) => (
+          <li key={`location${index + 1}`}>{city}</li>
+        ))}
+      </ol>
+  
     </div>
   )
 }
